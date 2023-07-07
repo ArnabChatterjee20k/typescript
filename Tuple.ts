@@ -12,3 +12,8 @@ rgb[1] = 12;
 // but still it dont disallow usage of push,pop , unshift leading to adding of extra elements
 rgb.push(12);
 console.log(rgb);
+
+// stopping mutation using read only
+let test:readonly [number,string] = [10,"dlfj"];
+// test[0] = 12; // error
+// test.push(12) // error
